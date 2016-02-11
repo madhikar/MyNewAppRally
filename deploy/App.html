@@ -7,7 +7,7 @@
 
     <script type="text/javascript">
         Rally.onReady(function () {
-                Ext.define("CustomApp",{extend:"Rally.app.App",componentCls:"app",items:{html:"This is my first APP"},launch:function(){console.log("Here I am testing the appp !")}});
+                Ext.define("CustomApp",{extend:"Rally.app.App",componentCls:"app",items:[{html:"This is my first APP"},{xtype:"rallyiterationcombobox"}],launch:function(){console.log("this is version2 !")}});
 
             Rally.launchApp('CustomApp', {
                 name:"myRallyApp",
